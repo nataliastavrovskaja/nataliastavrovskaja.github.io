@@ -41,7 +41,7 @@ body {
 
 .name {
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 0.3px;
 
     margin-bottom: 40px;
@@ -54,9 +54,9 @@ body {
     text-decoration: none;
     color: #222;
 
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.5;
 }
 
@@ -67,7 +67,7 @@ body {
 /* instagram */
 
 .sidebar-bottom {
-    font-size: 7px;
+    font-size: 10px;
 }
 
 /* CONTENU */
@@ -166,7 +166,7 @@ p {
 /* BIO */
 
 .bio-text {
-    max-width: 400px;
+    max-width: 600px;
 }
 
 /* RESPONSIVE */
@@ -211,7 +211,7 @@ p {
 
     text-align: center;
 
-    font-size: 9px;
+    font-size: 12px;
 
     letter-spacing: 0.3px;
 
@@ -265,7 +265,7 @@ p {
 
 .intro-text {
 
-    font-size: 11px;
+    font-size: 12px;
 
     line-height: 1.7;
 
@@ -281,7 +281,7 @@ p {
 
     text-align: center;
 
-    font-size: 10px;
+    font-size: 12px;
 
     line-height: 1.6;
 
@@ -301,7 +301,7 @@ p {
 
     width: 170px;
 
-    font-size: 12px;
+    font-size: 10px;
 
     line-height: 1.5;
 
@@ -323,7 +323,7 @@ p {
 
     text-align: right;
 
-    font-size: 12px;
+    font-size: 10px;
 
     font-style: italic;
 
