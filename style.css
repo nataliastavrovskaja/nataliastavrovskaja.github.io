@@ -234,6 +234,8 @@ p {
     margin: 0 auto;
 
     min-height: 420px;
+    
+    left: -90px;
 
 }
 
@@ -299,7 +301,7 @@ p {
 
     top: 150px;
 
-    width: 170px;
+    width: 260px;
 
     font-size: 10px;
 
@@ -319,7 +321,7 @@ p {
 
     top: 150px;
 
-    width: 120px;
+    width: 260px;
 
     text-align: right;
 
