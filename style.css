@@ -8,12 +8,13 @@ body {
     font-weight: 300;
 }
 
-/* MENU GAUCHE */
+/* MENU LATÉRAL */
 
 .sidebar {
     position: fixed;
     left: 0;
     top: 0;
+
     width: 220px;
     height: 100vh;
 
@@ -24,32 +25,44 @@ body {
     justify-content: space-between;
 
     border-right: 1px solid #ddd;
+
     background: #f5f5f3;
+    box-sizing: border-box;
 }
+
+/* partie haute menu */
 
 .sidebar-top {
     display: flex;
     flex-direction: column;
 }
 
+/* nom */
+
 .name {
     font-style: italic;
+    font-size: 22px;
     margin-bottom: 40px;
-    font-size: 20px;
+    line-height: 1.3;
 }
+
+/* liens */
 
 .sidebar a {
     text-decoration: none;
     color: #222;
+
     margin-bottom: 10px;
+
     font-size: 15px;
+    line-height: 1.5;
 }
 
 .sidebar a:hover {
     opacity: 0.5;
 }
 
-/* instagram bas */
+/* instagram */
 
 .sidebar-bottom {
     font-size: 14px;
@@ -60,28 +73,52 @@ body {
 .content {
     margin-left: 260px;
     padding: 60px;
+
+    max-width: 1200px;
+    box-sizing: border-box;
 }
 
-/* SECTION */
+/* TITRES */
 
-.section {
-    margin-bottom: 140px;
+h1 {
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 40px;
 }
 
-/* GRILLE OEUVRES */
+h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* TEXTES */
+
+p {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* STRUCTURE OEUVRES */
 
 .artwork {
     display: grid;
+
     grid-template-columns: 1fr 320px;
+
     gap: 40px;
-    margin-bottom: 120px;
+
+    margin-bottom: 140px;
 }
 
-/* images côte à côte */
+/* IMAGES */
 
 .images {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
+
     gap: 20px;
 }
 
@@ -90,25 +127,55 @@ body {
     display: block;
 }
 
-/* texte descriptif */
+/* TEXTE À DROITE */
 
 .info {
     font-size: 15px;
     line-height: 1.7;
 }
 
-.info h2 {
-    font-size: 22px;
-    font-weight: 400;
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
-/* cartouche */
+/* CARTOUCHE */
 
 .caption {
     margin-top: 12px;
+
     font-size: 13px;
-    font-style: italic;
     line-height: 1.5;
+
+    font-style: italic;
+}
+
+/* BIO */
+
+.bio-text {
+    max-width: 700px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 900px) {
+
+    .sidebar {
+        position: relative;
+
+        width: 100%;
+        height: auto;
+
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 30px;
+    }
+
+    .artwork {
+        grid-template-columns: 1fr;
+    }
+
+    .images {
+        grid-template-columns: 1fr;
+    }
+
 }
