@@ -276,6 +276,10 @@ p {
     font-style: italic;
 
     margin-bottom: 28px;
+    
+    text-align: justify;
+
+    hyphens: auto;
 
 }
 
