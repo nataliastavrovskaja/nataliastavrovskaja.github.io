@@ -2,37 +2,109 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>natalia-stavrovskaja</title>
+<title>Natalia Stavrovskaja</title>
+
 <style>
 body {
     font-family: Georgia, serif;
-    max-width: 700px;
-    margin: 80px auto;
-    line-height: 1.6;
-    color: #222;
+    margin: 0;
+    padding: 0;
+    color: #1a1a1a;
+    background: #fff;
 }
+
+/* Conteneur principal */
+.container {
+    max-width: 720px;
+    margin: 120px auto;
+    padding: 0 24px;
+}
+
+/* Nom */
 h1 {
     font-weight: normal;
+    font-size: 42px;
+    margin-bottom: 40px;
+    letter-spacing: 0.5px;
+}
+
+/* Sections */
+section {
+    margin-bottom: 60px;
+}
+
+/* Titres de section */
+h2 {
+    font-weight: normal;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Texte */
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Contact discret */
+.contact {
+    margin-top: 80px;
+    font-size: 16px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+}
+
+a:hover {
+    border-bottom: 1px solid #000;
 }
 </style>
 </head>
 
 <body>
 
-<h1>Natalia Stavrovskaja</h1>
+<div class="container">
 
-<p>
-Artiste basée à Paris.
-</p>
+    <h1>Natalia Stavrovskaja</h1>
 
-<p>
-Ton texte bio ici. Tu peux écrire sur ton travail, ton parcours,
-tes inspirations, tes expos…
-</p>
+    <section>
+        <h2>Bio</h2>
+        <p>
+            Artiste basée à Paris. Je développe une pratique centrée sur la mémoire,
+            le corps et la perception du temps à travers différents médiums.
+        </p>
 
-<p>
-Contact : natalia.stavrovskaja@gmail.com
-</p>
+        <p>
+            Mon travail explore les tensions entre fragilité et structure, entre intime
+            et espace public.
+        </p>
+    </section>
+
+    <section>
+        <h2>Practice</h2>
+        <p>
+            Peinture, installation, photographie et écriture constituent les axes principaux
+            de ma recherche artistique.
+        </p>
+    </section>
+
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>
+            <a href="mailto:natalia.stavrovskaja@gmail.com">
+                natalia.stavrovskaja@gmail.com
+            </a>
+        </p>
+    </section>
+
+</div>
 
 </body>
 </html>
