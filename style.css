@@ -182,3 +182,96 @@ p {
     }
 
 }
+/* INTRO SERIE */
+
+.serie-intro {
+    margin-bottom: 220px;
+}
+
+/* citation haut */
+
+.intro-quote-top {
+    text-align: center;
+
+    font-size: 12px;
+
+    letter-spacing: 0.5px;
+
+    margin-bottom: 80px;
+
+    opacity: 0.7;
+}
+
+/* grille principale */
+
+.intro-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 420px 1fr;
+
+    align-items: start;
+
+    gap: 60px;
+}
+
+/* gauche */
+
+.intro-left {
+    font-size: 28px;
+
+    font-style: italic;
+
+    line-height: 1.4;
+
+    padding-top: 180px;
+}
+
+/* centre */
+
+.intro-center {
+    text-align: center;
+}
+
+.intro-center img {
+    width: 100%;
+
+    display: block;
+
+    margin-bottom: 24px;
+}
+
+/* texte */
+
+.intro-text {
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    font-style: italic;
+
+    text-align: left;
+
+    margin-bottom: 40px;
+}
+
+/* cartouche */
+
+.intro-caption {
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    font-style: italic;
+}
+
+/* droite */
+
+.intro-right {
+    text-align: right;
+
+    font-size: 28px;
+
+    font-style: italic;
+
+    padding-top: 180px;
+}
