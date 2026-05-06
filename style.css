@@ -130,13 +130,24 @@ p {
 /* IMAGES */
 
 .images {
-    display: grid;
 
-    grid-template-columns: 1fr 1fr;
+    display: flex;
 
-    gap: 24px;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    gap: 18px;
 
     width: 100%;
+}
+
+.images > div {
+
+    flex: 0 1 280px;
+
 }
 
 .images img {
