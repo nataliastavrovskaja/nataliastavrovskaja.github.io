@@ -1,52 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;1,300&display=swap');
+
 body {
     margin: 0;
-    font-family: Georgia, serif;
-    color: #1a1a1a;
-    background: #fff;
+    background: #f5f5f3;
+    color: #222;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
 }
 
-/* sidebar */
+/* MENU GAUCHE */
+
 .sidebar {
     position: fixed;
+    left: 0;
+    top: 0;
     width: 220px;
     height: 100vh;
-    padding: 40px 20px;
-    border-right: 1px solid #eee;
+
+    padding: 40px 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-right: 1px solid #ddd;
+    background: #f5f5f3;
 }
 
-.sidebar h1 {
-    font-size: 18px;
-    font-weight: normal;
+.sidebar-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-style: italic;
     margin-bottom: 40px;
+    font-size: 20px;
 }
 
 .sidebar a {
-    display: block;
-    margin: 8px 0;
     text-decoration: none;
     color: #222;
+    margin-bottom: 10px;
+    font-size: 15px;
 }
 
-.sidebar .group p {
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #888;
-    margin-top: 20px;
+.sidebar a:hover {
+    opacity: 0.5;
 }
 
-/* contenu */
+/* instagram bas */
+
+.sidebar-bottom {
+    font-size: 14px;
+}
+
+/* CONTENU */
+
 .content {
     margin-left: 260px;
-    padding: 80px 40px;
-    max-width: 800px;
+    padding: 60px;
 }
 
-h1 {
-    font-weight: normal;
-    margin-bottom: 30px;
+/* SECTION */
+
+.section {
+    margin-bottom: 140px;
 }
 
-img {
+/* GRILLE OEUVRES */
+
+.artwork {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 40px;
+    margin-bottom: 120px;
+}
+
+/* images côte à côte */
+
+.images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.images img {
     width: 100%;
+    display: block;
+}
+
+/* texte descriptif */
+
+.info {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.info h2 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 0;
     margin-bottom: 20px;
+}
+
+/* cartouche */
+
+.caption {
+    margin-top: 12px;
+    font-size: 13px;
+    font-style: italic;
+    line-height: 1.5;
 }
