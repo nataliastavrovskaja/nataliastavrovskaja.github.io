@@ -65,7 +65,7 @@ body {
 /* instagram */
 
 .sidebar-bottom {
-    font-size: 14px;
+    font-size: 7px;
 }
 
 /* CONTENU */
@@ -81,13 +81,13 @@ body {
 /* TITRES */
 
 h1 {
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 300;
     margin-bottom: 40px;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 12px;
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 20px;
@@ -96,7 +96,7 @@ h2 {
 /* TEXTES */
 
 p {
-    font-size: 15px;
+    font-size: 10px;
     line-height: 1.8;
 }
 
@@ -105,11 +105,13 @@ p {
 .artwork {
     display: grid;
 
-    grid-template-columns: 1fr 320px;
+    grid-template-columns: minmax(0, 1fr) 220px;
 
-    gap: 40px;
+    gap: 60px;
 
-    margin-bottom: 140px;
+    align-items: start;
+
+    margin-bottom: 160px;
 }
 
 /* IMAGES */
@@ -130,8 +132,9 @@ p {
 /* TEXTE À DROITE */
 
 .info {
-    font-size: 15px;
+    font-size: 8px;
     line-height: 1.7;
+    max-width: 220px;
 }
 
 /* CARTOUCHE */
@@ -139,7 +142,7 @@ p {
 .caption {
     margin-top: 12px;
 
-    font-size: 13px;
+    font-size: 8px;
     line-height: 1.5;
 
     font-style: italic;
@@ -148,7 +151,7 @@ p {
 /* BIO */
 
 .bio-text {
-    max-width: 700px;
+    max-width: 400px;
 }
 
 /* RESPONSIVE */
