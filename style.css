@@ -184,97 +184,134 @@ p {
     }
 
 }
-/* INTRO SERIE */
+/* INTRO */
 
 .serie-intro {
-    margin-bottom: 220px;
+
+    margin-bottom: 260px;
+
 }
 
 /* citation haut */
 
 .intro-quote-top {
+
     text-align: center;
 
-    font-size: 10px;
+    font-size: 11px;
 
-    letter-spacing: 0.5px;
+    letter-spacing: 0.4px;
 
-    margin-bottom: 80px;
-    margin-top: 80px;
+    opacity: 0.55;
 
-    opacity: 0.7;
+    margin-bottom: 70px;
+
 }
 
-/* grille principale */
+/* structure */
 
 .intro-grid {
-    display: grid;
 
-    grid-template-columns: 1fr 420px 1fr;
+    position: relative;
 
-    align-items: start;
+    width: 100%;
 
-    gap: 60px;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    min-height: 700px;
+
 }
 
-/* gauche */
-
-.intro-left {
-    font-size: 10px;
-
-    font-style: italic;
-
-    line-height: 1.4;
-
-    padding-top: 180px;
-}
-
-/* centre */
+/* CENTRE */
 
 .intro-center {
-    text-align: center;
+
+    width: 420px;
+
+    margin: 0 auto;
+
+    text-align: left;
+
 }
 
+/* image */
+
 .intro-center img {
-    width: 100%;
+
+    width: 520 px;
 
     display: block;
 
-    margin-bottom: 24px;
+    margin-bottom: 26px;
+
 }
 
-/* texte */
+/* texte central */
 
 .intro-text {
-    font-size: 12px;
+
+    font-size: 15px;
 
     line-height: 1.8;
 
     font-style: italic;
 
-    text-align: left;
+    margin-bottom: 50px;
 
-    margin-bottom: 40px;
 }
 
-/* cartouche */
+/* caption */
 
 .intro-caption {
-    font-size: 10px;
 
-    line-height: 1.7;
+    text-align: center;
+
+    font-size: 13px;
+
+    line-height: 1.8;
 
     font-style: italic;
+
 }
 
-/* droite */
+/* TEXTE GAUCHE */
 
-.intro-right {
-    text-align: right;
+.intro-left {
 
-    font-size: 10px;
+    position: absolute;
+
+    left: 0;
+
+    top: 260px;
+
+    width: 240px;
+
+    font-size: 26px;
+
+    line-height: 1.5;
 
     font-style: italic;
 
-    padding-top: 180px;
+}
+
+/* DATE DROITE */
+
+.intro-right {
+
+    position: absolute;
+
+    right: 0;
+
+    top: 260px;
+
+    width: 180px;
+
+    text-align: right;
+
+    font-size: 26px;
+
+    font-style: italic;
+
 }
