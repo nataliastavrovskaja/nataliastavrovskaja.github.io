@@ -72,11 +72,22 @@ body {
 
 /* CONTENU */
 
-.content {
+/* .content {
     margin-left: 260px;
     padding: 60px;
 
     max-width: 1200px;
+    box-sizing: border-box;
+} */
+
+.content {
+
+    margin-left: 260px;
+
+    padding: 60px 80px 140px 80px;
+
+    max-width: 1600px;
+
     box-sizing: border-box;
 }
 
