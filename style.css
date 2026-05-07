@@ -349,3 +349,90 @@ p {
     font-style: italic;
 
 }
+
+/* MOBILE telephone */
+
+@media screen and (max-width: 900px) {
+
+    .sidebar {
+
+        position: relative;
+
+        width: 100%;
+
+        height: auto;
+
+        border-right: none;
+
+        border-bottom: 1px solid #ddd;
+
+        padding: 24px;
+
+    }
+
+    .content {
+
+        margin-left: 0;
+
+        padding: 30px 20px 80px 20px;
+
+        max-width: 100%;
+
+    }
+
+    .artwork {
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .intro-grid {
+
+        position: relative;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 30px;
+
+        left: 0;
+
+        min-height: auto;
+    }
+
+    .intro-left,
+    .intro-right {
+
+        position: relative;
+
+        width: auto;
+
+        top: auto;
+
+        left: auto;
+
+        right: auto;
+
+        text-align: center;
+
+        white-space: normal;
+    }
+
+    .intro-center {
+
+        width: 100%;
+
+        max-width: 280px;
+    }
+
+    .images {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
