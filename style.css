@@ -222,18 +222,23 @@ p {
 
 .intro-quote-top {
 
+    width: 100%;
+
+    max-width: 780px;
+
+    margin: 0 auto 45px auto;
+
+    position: relative;
+
+    left: -90px;
+
     text-align: center;
 
-    font-size: 12px;
+    font-size: 9px;
 
     letter-spacing: 0.3px;
 
     opacity: 0.5;
-
-    margin-bottom: 45px;
-
-    left: -120px;
-
 }
 
 /* structure */
