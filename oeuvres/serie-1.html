@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -6,50 +5,13 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Prahy 1 — Natalia Stavrovskaja</title>
 
 <link rel="stylesheet" href="../style.css">
 
 </head>
 
-<!-- affichage des images isolées -->
-<div id="lightbox" class="lightbox">
-
-    <img id="lightbox-img" src="" alt="">
-
-</div>
-    <script>
-
-document.addEventListener('DOMContentLoaded', () => {
-
-    const images = document.querySelectorAll('.images img');
-
-    const lightbox = document.getElementById('lightbox');
-
-    const lightboxImg = document.getElementById('lightbox-img');
-
-    images.forEach(image => {
-
-        image.addEventListener('click', () => {
-
-            lightbox.style.display = 'flex';
-
-            lightboxImg.src = image.src;
-
-        });
-
-    });
-
-    lightbox.addEventListener('click', () => {
-
-        lightbox.style.display = 'none';
-
-    });
-
-});
-
-</script>
-    
 <body>
 
 <!-- MENU LATÉRAL -->
@@ -68,13 +30,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         <br>
 
-<a href="serie-1.html">Prahy - Seuils - Пределы - Yesod</a>
+        <a href="serie-1.html">Prahy - Seuils - Пределы - Yesod</a>
 
-<a href="serie-2.html">Kairos Passy</a>
+        <a href="serie-2.html">Kairos Passy</a>
 
-<a href="serie-3.html">Повѣсть времяньныхъ лѣтъ</a>
+        <a href="serie-3.html">Повѣсть времяньныхъ лѣтъ</a>
 
-<a href="serie-4.html">Nové Elegie</a>
+        <a href="serie-4.html">Nové Elegie</a>
 
     </div>
 
@@ -91,70 +53,68 @@ document.addEventListener('DOMContentLoaded', () => {
 <!-- CONTENU -->
 
 <div class="content">
-    
-        <div class="serie-intro">
-    
+
+    <div class="serie-intro">
+
         <div class="intro-quote-top">
             Dans le ciel il n’y a personne. - A. Tarkovski
         </div>
-    
+
         <div class="intro-grid">
-    
+
             <!-- gauche -->
-    
+
             <div class="intro-left">
                 Prahy - Seuils - Пределы - Yesod
             </div>
-    
+
             <!-- centre -->
-    
+
             <div class="intro-center">
-    
+
                 <img src="../img/serie1-100.jpg" alt="">
-    
+
                 <div class="intro-text">
-    
+
                     Le dialogue avec l’icône est un approfondissement
                     de la pénétration dans le Mystère, et non une tentative
                     instantanée de parler soudain une langue étrangère,
                     en consultant constamment un dictionnaire.
-    
+
                     <br><br>
-    
+
                     - S.A. Averintsev
-    
+
                 </div>
-    
+
                 <div class="intro-caption">
-    
+
                     Andrei Roublev<br>
                     1410 - 1427<br>
                     142 × 114 cm<br>
                     Tempera sur Toile
-    
+
                     <br><br>
-    
+
                     <strong>Trinité</strong>
-    
+
                 </div>
-    
+
             </div>
-    
+
             <!-- droite -->
-    
+
             <div class="intro-right">
                 2024 - 2026
             </div>
-    
+
         </div>
-    
+
     </div>
 
     <!-- OEUVRE 1 -->
 
     <div class="artwork">
-
-        <!-- IMAGES -->
 
         <div class="images">
 
@@ -182,8 +142,6 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
 
         </div>
-
-        <!-- TEXTE -->
 
         <div class="info">
 
@@ -244,23 +202,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
         <div class="info">
 
-            <h2>Prahy 2 (Seuils) </h2>
+            <h2>Prahy 2 (Seuils)</h2>
+
             <p>
-            Trinité de la Sainte Sophie
-            </p>
-                Foi, Esperance, Charité 
+                Trinité de la Sainte Sophie
             </p>
 
             <p>
-                Par « théologale », il faut entendre : « ayant Dieu pour objet ». 
-
-            </p> 
+                Foi, Esperance, Charité
+            </p>
 
             <p>
-                Ces vertus disposent les hommes à vivre en relation avec Dieu. Au ciel, seule la charité subsistera, sous la forme de la vision directe de Dieu. 
-                Elles adaptent les facultés de l’humanité à la participation de la nature divine, et elles sont dites surnaturelles en ce qu’elles sont fondées sur la 
-                grâce. 
+                Par « théologale », il faut entendre :
+                « ayant Dieu pour objet ».
             </p>
+
+            <p>
+                Ces vertus disposent les hommes à vivre en relation avec Dieu.
+                Au ciel, seule la charité subsistera, sous la forme de la vision
+                directe de Dieu.
+            </p>
+
+            <p>
+                Elles adaptent les facultés de l’humanité à la participation de la
+                nature divine, et elles sont dites surnaturelles en ce qu’elles sont
+                fondées sur la grâce.
+            </p>
+
         </div>
 
     </div>
@@ -275,38 +243,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
 </div>
 
-<!-- affichage des images isolées -->  
+<!-- SCRIPT LIGHTBOX -->
+
 <script>
 
-const images = document.querySelectorAll('.images img');
+document.addEventListener('DOMContentLoaded', () => {
 
-const lightbox = document.getElementById('lightbox');
+    const images = document.querySelectorAll('.images img');
 
-const lightboxImg = document.getElementById('lightbox-img');
+    const lightbox = document.getElementById('lightbox');
 
-images.forEach(image => {
+    const lightboxImg = document.getElementById('lightbox-img');
 
-    image.addEventListener('click', () => {
+    images.forEach(image => {
 
-        lightbox.style.display = 'flex';
+        image.addEventListener('click', () => {
 
-        lightboxImg.src = image.src;
+            lightbox.style.display = 'flex';
+
+            lightboxImg.src = image.src;
+
+        });
+
+    });
+
+    lightbox.addEventListener('click', () => {
+
+        lightbox.style.display = 'none';
 
     });
 
 });
 
-lightbox.addEventListener('click', () => {
-
-    lightbox.style.display = 'none';
-
-});
-
 </script>
-
-</body>
-
-</html>
 
 </body>
 
