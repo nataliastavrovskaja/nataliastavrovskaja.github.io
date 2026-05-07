@@ -537,10 +537,6 @@ p {
     align-items: center;
 
     z-index: 9999;
-
-    padding: 40px;
-
-    box-sizing: border-box;
 }
 
 .lightbox img {
@@ -550,8 +546,6 @@ p {
 
     object-fit: contain;
 }
-
-/* curseur */
 
 .images img {
 
