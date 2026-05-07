@@ -12,6 +12,34 @@
 
 </head>
 
+<!-- affichage des images isolées -->
+<script>
+
+const images = document.querySelectorAll('.images img');
+
+const lightbox = document.getElementById('lightbox');
+
+const lightboxImg = document.getElementById('lightbox-img');
+
+images.forEach(image => {
+
+    image.addEventListener('click', () => {
+
+        lightbox.style.display = 'flex';
+
+        lightboxImg.src = image.src;
+
+    });
+
+});
+
+lightbox.addEventListener('click', () => {
+
+    lightbox.style.display = 'none';
+
+});
+
+</script>
 <body>
 
 <!-- MENU LATÉRAL -->
@@ -228,6 +256,47 @@
     </div>
 
 </div>
+
+<!-- LIGHTBOX -->
+
+<div id="lightbox" class="lightbox">
+
+    <img id="lightbox-img" src="" alt="">
+
+</div>
+
+<!-- affichage des images isolées -->  
+<script>
+
+const images = document.querySelectorAll('.images img');
+
+const lightbox = document.getElementById('lightbox');
+
+const lightboxImg = document.getElementById('lightbox-img');
+
+images.forEach(image => {
+
+    image.addEventListener('click', () => {
+
+        lightbox.style.display = 'flex';
+
+        lightboxImg.src = image.src;
+
+    });
+
+});
+
+lightbox.addEventListener('click', () => {
+
+    lightbox.style.display = 'none';
+
+});
+
+</script>
+
+</body>
+
+</html>
 
 </body>
 
