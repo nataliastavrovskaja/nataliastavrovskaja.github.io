@@ -479,15 +479,16 @@ p {
 }
 
 .bio-manifesto {
-    width: 32%;
+    max-width: 650px;
 
-    font-size: 14px;
-    line-height: 1.9;
+    font-size: 15px;
+    line-height: 1.8;
 
     text-align: justify;
     hyphens: auto;
 
     color: #444;
+    
 }
 
 /* BIO MOBILE */
