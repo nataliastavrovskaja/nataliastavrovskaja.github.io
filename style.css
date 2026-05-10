@@ -180,7 +180,19 @@ p {
 /* BIO */
 
 .bio-text {
-    max-width: 600px;
+    max-width: 650px;
+    
+    text-align: justify;
+
+    line-height: 1.8;
+
+    font-size: 15px;
+
+    hyphens: auto;
+}
+
+.bio-text p {
+    margin-bottom: 22px;
 }
 
 /* RESPONSIVE */
@@ -465,17 +477,17 @@ p {
 
     margin-bottom: 34px;
 }
+
 .bio-manifesto {
+    width: 32%;
 
-    max-width: 400px;
+    font-size: 14px;
+    line-height: 1.9;
 
-    font-size: 12px;
+    text-align: justify;
+    hyphens: auto;
 
-    line-height: 2;
-
-    opacity: 0.7;
-
-    margin-bottom: 120px;
+    color: #444;
 }
 
 /* BIO MOBILE */
