@@ -70,16 +70,7 @@ body {
     font-size: 10px;
 }
 
-
 /* CONTENU */
-
-/* .content {
-    margin-left: 260px;
-    padding: 60px;
-
-    max-width: 1200px;
-    box-sizing: border-box;
-} */
 
 .content {
 
@@ -150,12 +141,12 @@ p {
     flex: 1 1 0;
 
     min-width: 0;
-
 }
 
 .images img {
     width: 100%;
     display: block;
+    cursor: pointer;
 }
 
 /* TEXTE À DROITE */
@@ -177,58 +168,11 @@ p {
     font-style: italic;
 }
 
-/* BIO */
-
-.bio-text {
-    max-width: 650px;
-    
-    text-align: justify;
-
-    line-height: 1.8;
-
-    font-size: 15px;
-
-    hyphens: auto;
-}
-
-.bio-text p {
-    margin-bottom: 22px;
-}
-
-/* RESPONSIVE */
-
-@media screen and (max-width: 900px) {
-
-    .sidebar {
-        position: relative;
-
-        width: 100%;
-        height: auto;
-
-        border-right: none;
-        border-bottom: 1px solid #ddd;
-    }
-
-    .content {
-        margin-left: 0;
-        padding: 30px;
-    }
-
-    .artwork {
-        grid-template-columns: 1fr;
-    }
-
-    .images {
-        grid-template-columns: 1fr;
-    }
-
-}
 /* INTRO */
 
 .serie-intro {
 
     margin-bottom: 180px;
-
 }
 
 /* citation haut */
@@ -269,7 +213,6 @@ p {
     min-height: 420px;
     
     left: -120px;
-
 }
 
 /* CENTRE */
@@ -281,7 +224,6 @@ p {
     margin: 0 auto;
 
     text-align: left;
-
 }
 
 /* image */
@@ -293,7 +235,6 @@ p {
     display: block;
 
     margin-bottom: 18px;
-
 }
 
 /* texte central */
@@ -311,7 +252,6 @@ p {
     text-align: justify;
 
     hyphens: auto;
-
 }
 
 /* caption */
@@ -325,7 +265,6 @@ p {
     line-height: 1.6;
 
     font-style: italic;
-
 }
 
 /* TEXTE GAUCHE */
@@ -345,7 +284,6 @@ p {
     line-height: 1.5;
 
     font-style: italic;
-
 }
 
 /* DATE DROITE */
@@ -365,10 +303,101 @@ p {
     font-size: 10px;
 
     font-style: italic;
-
 }
 
-/* MOBILE telephone */
+/* BIO */
+
+.bio-content {
+
+    margin-left: 340px;
+
+    padding-top: 80px;
+
+    padding-right: 80px;
+
+    max-width: 720px;
+
+    box-sizing: border-box;
+}
+
+.bio-manifesto {
+
+    margin-bottom: 90px;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+    text-align: justify;
+
+    hyphens: auto;
+
+    color: #444;
+}
+
+.bio-text {
+
+    text-align: justify;
+
+    hyphens: auto;
+}
+
+.bio-text p {
+
+    font-size: 12px;
+
+    line-height: 1.9;
+
+    margin-bottom: 34px;
+}
+
+/* LIGHTBOX */
+
+.lightbox {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.92);
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+}
+
+.lightbox img {
+
+    max-width: 95%;
+    max-height: 95%;
+
+    object-fit: contain;
+}
+
+/* COPYRIGHT */
+
+.copyright {
+
+    position: fixed;
+
+    bottom: 20px;
+    right: 20px;
+
+    font-size: 11px;
+
+    color: #888;
+
+    letter-spacing: 0.5px;
+}
+
+/* RESPONSIVE */
 
 @media screen and (max-width: 900px) {
 
@@ -385,7 +414,6 @@ p {
         border-bottom: 1px solid #ddd;
 
         padding: 24px;
-
     }
 
     .content {
@@ -395,7 +423,6 @@ p {
         padding: 30px 20px 80px 20px;
 
         max-width: 100%;
-
     }
 
     .artwork {
@@ -450,50 +477,7 @@ p {
     .images {
 
         grid-template-columns: 1fr;
-
     }
-
-}
-
-/* BIO FIX */
-
-.bio-content {
-
-    margin-left: 340px;
-
-    padding-top: 80px;
-
-    padding-right: 80px;
-
-    max-width: 400px;
-
-    box-sizing: border-box;
-}
-.bio-text p {
-
-    font-size: 12px;
-
-    line-height: 1.9;
-
-    margin-bottom: 34px;
-}
-
-.bio-manifesto {
-    max-width: 650px;
-
-    font-size: 15px;
-    line-height: 1.8;
-
-    text-align: justify;
-    hyphens: auto;
-
-    color: #444;
-    
-}
-
-/* BIO MOBILE */
-
-@media screen and (max-width: 900px) {
 
     .bio-content {
 
@@ -502,23 +486,15 @@ p {
         padding: 40px 24px 80px 24px;
 
         max-width: 100%;
-
     }
 
     .bio-manifesto {
-
-        max-width: 100%;
 
         font-size: 11px;
 
         line-height: 1.9;
 
-        margin-bottom: 80px;
-    }
-
-    .bio-text {
-
-        max-width: 100%;
+        margin-bottom: 60px;
     }
 
     .bio-text p {
@@ -527,52 +503,16 @@ p {
 
         line-height: 1.9;
 
-        margin-bottom: 30px;
+        margin-bottom: 28px;
     }
 
-}
-/* LIGHTBOX */
+    .copyright {
 
-.lightbox {
+        position: relative;
 
-    position: fixed;
+        bottom: auto;
+        right: auto;
 
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    background: rgba(0,0,0,0.92);
-
-    display: none;
-
-    justify-content: center;
-    align-items: center;
-
-    z-index: 9999;
-}
-
-.lightbox img {
-
-    max-width: 95%;
-    max-height: 95%;
-
-    object-fit: contain;
-}
-
-.images img {
-
-    cursor: pointer;
-}
-
-.copyright {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-
-    font-size: 11px;
-    color: #888;
-
-    letter-spacing: 0.5px;
+        padding: 0 24px 30px 24px;
+    }
 }
