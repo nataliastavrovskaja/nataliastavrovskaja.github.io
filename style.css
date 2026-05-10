@@ -552,3 +552,14 @@ p {
 
     cursor: pointer;
 }
+
+.copyright {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    font-size: 11px;
+    color: #888;
+
+    letter-spacing: 0.5px;
+}
