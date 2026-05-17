@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saint Jean Baptiste // Daat — Natalia Stavrovskaja</title>
+
+<link rel="stylesheet" href="../style.css">
+
+</head>
+
+    <!-- affichage des images isolées -->
+<div id="lightbox" class="lightbox">
+
+    <img id="lightbox-img" src="" alt="">
+
+</div>
+    <script>
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    const images = document.querySelectorAll('.images img');
+
+    const lightbox = document.getElementById('lightbox');
+
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    images.forEach(image => {
+
+        image.addEventListener('click', () => {
+
+            lightbox.style.display = 'flex';
+
+            lightboxImg.src = image.src;
+
+        });
+
+    });
+
+    lightbox.addEventListener('click', () => {
+
+        lightbox.style.display = 'none';
+
+    });
+
+});
+
+</script>
+
+    
+<body>
+
+<!-- MENU LATÉRAL -->
+
+<nav class="sidebar">
+
+    <div class="sidebar-top">
+
+        <div class="name">
+            Natalia Stavrovskaja
+        </div>
+
+        <a href="../index.html">Œuvres 2020 - 2026</a>
+
+        <a href="../bio.html">Bio</a>
+
+        <br>
+
+<a href="serie-1.html">Prahy - Seuils - Пределы - Yesod</a>
+
+<a href="serie-2.html">Kairos Passy</a>
+
+<a href="serie-3.html">Повѣсть времяньныхъ лѣтъ</a>
+
+<a href="serie-4.html">Nové Elegie</a>
+      
+<a href="serie-5.html">Saint Jean Baptiste</a>
+      
+<a href="serie-6.html">Abraham</a>
+
+    </div>
+
+    <div class="sidebar-bottom">
+
+        <a href="https://www.instagram.com/natalia.stavrovskaja?igsh=MTN5M3RpOThoamozNw%3D%3D&utm_source=qr" target="_blank">
+            Instagram
+        </a>
+
+    </div>
+
+</nav>
+
+<!-- CONTENU -->
+
+<div class="content">
+    
+        <div class="serie-intro">
+    
+        <div class="intro-quote-top">
+          La forme n'est qu'un instantané pris sur une transition. - Henri Bergson
+        </div>
+    
+        <div class="intro-grid">
+    
+            <!-- gauche -->
+    
+            <div class="intro-left">
+            <p>
+            Abraham // Hesed 
+            </div>
+
+    
+            <!-- centre -->
+    
+            <div class="intro-center">
+    
+                <img src="../img/serie5-100.jpg" alt="">
+    
+                <div class="intro-text">
+    
+                Il y a un être dans nous qui n'a d'autre objet que lui même. Il y en a un autre, qui tend, par toutes les forces qui sont en lui, vers quelque chose qui le dépasse. Et ces deux êtres ne sont pas seulement différents. Il y a entre eux un véritable antagonisme.
+    
+                    <br><br>
+    
+                    - Emile Durkeim, Le fait réligieux
+    
+                </div>
+    
+                <div class="intro-caption">
+    
+                    Natalia Stavrovskaja<br>
+                    printemps 2026 
+    
+                    <br><br>
+    
+                    <strong>Abraham</strong>
+    
+                </div>
+    
+            </div>
+    
+            <!-- droite -->
+    
+            <div class="intro-right">
+                2026
+            </div>
+    
+        </div>
+    
+    </div>
+
+    <!-- OEUVRE 1 -->
+
+    <div class="artwork">
+
+        <!-- IMAGES -->
+
+        <div class="images">
+
+            <div>
+
+                <img src="../img/serie6-1.jpg" alt="">
+
+                <div class="caption">
+                    Natalia Stavrovskaja<br>
+                    Paris 2026<br>
+                    150 × 50 cm<br>
+                    Peinture Acrylique / Medium / Divers sur Toile
+                </div>
+
+            </div>
+
+            <div>
+
+                <img src="../img/serie6-2.jpg" alt="">
+
+                <div class="caption">
+                    Détail de texture
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- TEXTE -->
+
+        <div class="info">
+
+            <h2>Abraham // Hesed</h2>
+
+
+            <p>
+            [U]ne société porte son art comme l’arbre ses fleurs, en 
+            raison de leur enracinement dans un monde que ni l’un ni 
+            l’autre ne prétend faire totalement sien.
+            </p>
+
+            <p>
+          - Anthropologie Structurale deux, C. L. Strauss
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer class="copyright">
+© Natalia Stavrovskaja 2026
+</footer>
+</body>
+
+</html>
