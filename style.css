@@ -449,6 +449,21 @@ p {
         min-height: auto;
     }
 
+        .intro-quote-top {
+    
+        font-size: 12px;
+    
+        line-height: 1.6;
+    
+        text-align: center;
+    
+        white-space: normal;
+    
+        padding: 0 20px;
+    
+        max-width: 100%;
+    }
+
     .intro-left,
     .intro-right {
 
