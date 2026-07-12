@@ -254,6 +254,32 @@ p {
     hyphens: auto;
 }
 
+.intro-text.poem {
+
+    text-align: center;
+
+    hyphens: none;
+
+    line-height: 2;
+
+    margin-bottom: 36px;
+}
+
+.poem-source {
+
+    margin-top: 20px;
+
+    font-size: 9px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.12em;
+
+    color: #777;
+
+    font-style: normal;
+}
+
 /* caption */
 
 .intro-caption {
