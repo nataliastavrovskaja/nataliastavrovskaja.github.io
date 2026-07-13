@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shoort // Le Paysage vivant — Natalia Stavrovskaja</title>
+
+<link rel="stylesheet" href="../style.css">
+
+</head>
+
+    <!-- affichage des images isolées -->
+<div id="lightbox" class="lightbox">
+
+    <img id="lightbox-img" src="" alt="">
+
+</div>
+    <script>
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    const images = document.querySelectorAll('.images img');
+
+    const lightbox = document.getElementById('lightbox');
+
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    images.forEach(image => {
+
+        image.addEventListener('click', () => {
+
+            lightbox.style.display = 'flex';
+
+            lightboxImg.src = image.src;
+
+        });
+
+    });
+
+    lightbox.addEventListener('click', () => {
+
+        lightbox.style.display = 'none';
+
+    });
+
+});
+
+</script>
+
+    
+<body>
+
+<!-- MENU LATÉRAL -->
+
+<nav class="sidebar">
+
+    <div class="sidebar-top">
+
+        <div class="name">
+            Natalia Stavrovskaja
+        </div>
+
+        <a href="../index.html">Œuvres 2020 - 2026</a>
+
+        <a href="../bio.html">Bio</a>
+
+        <br>
+
+<a href="serie-1.html">Prahy - Seuils - Пределы - Yesod</a>
+
+<a href="serie-2.html">Kairos Passy</a>
+
+<a href="serie-3.html">Повѣсть времяньныхъ лѣтъ</a>
+
+<a href="serie-4.html">Nové Elegie</a>
+      
+<a href="serie-5.html">Saint Jean Baptiste</a>
+      
+<a href="serie-6.html">Abraham</a>
+
+<a href="serie-7.html">Quetzalcoatl</a>
+
+<a href="serie-8.html">Tlaloc</a>
+      
+<a href="serie-9.html">Shoort</a>
+
+    </div>
+
+    <div class="sidebar-bottom">
+
+        <a href="https://www.instagram.com/natalia.stavrovskaja?igsh=MTN5M3RpOThoamozNw%3D%3D&utm_source=qr" target="_blank">
+            Instagram
+        </a>
+
+    </div>
+
+</nav>
+
+<!-- CONTENU -->
+
+<div class="content">
+    
+        <div class="serie-intro">
+    
+    
+        <div class="intro-grid">
+
+    
+            <!-- gauche -->
+    
+            <div class="intro-left">
+            <p>
+            Shoort // Le Paysage vivant 
+            </div>
+
+    
+            <!-- centre -->
+    
+            <div class="intro-center">
+    
+                <img src="../img/serie9-100.jpg" alt="">
+    
+            <div class="intro-text">
+            
+                Ensemble, on est presque un paysage
+            
+                <br><br>
+            
+                — <em>Poèmes</em>, Joseph Brodsky
+            
+            </div>
+    
+                <div class="intro-caption">
+    
+                    Natalia Stavrovskaja<br>
+                    été 2026 
+    
+                    <br><br>
+    
+                    <strong>Rite de passage</strong>
+    
+                </div>
+    
+            </div>
+    
+            <!-- droite -->
+    
+            <div class="intro-right">
+                2026
+            </div>
+    
+        </div>
+    
+    </div>
+
+    <!-- OEUVRE 1 -->
+
+    <div class="artwork">
+
+        <!-- IMAGES -->
+
+        <div class="images">
+
+            <div>
+
+                <img src="../img/serie9-1.jpg" alt="">
+
+                <div class="caption">
+                    Natalia Stavrovskaja<br>
+                    Paris 2026<br>
+                    150 × 50 cm<br>
+                    Peinture Acrylique / Medium / Divers sur Toile
+                </div>
+
+            </div>
+
+            <div>
+
+                <img src="../img/serie9-2.jpg" alt="">
+
+                <div class="caption">
+                    Détail de texture
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- TEXTE -->
+
+        <div class="info">
+
+            <h2>Shoort // Le Paysage vivant</h2>
+
+
+        <p>
+        Les préparatifs de la cérémonie étaient menés dans le plus grand secret.
+        La Lune désignait alors celles des femmes qui devaient incarner les différents esprits.
+        Une fois les peintures et les masques préparés, les appelées s'exerçaient à reproduire l'attitude, la démarche et les gestes des esprits qu'elles allaient incarner.
+        Certains de ces esprits — disait-on — surgissaient des profondeurs de la terre pour pénétrer dans le <em>Hain</em> et prendre part au rituel.
+        Les autres descendaient du ciel, le plus souvent à la tombée de la nuit.
+        </p>
+        
+        <p>
+        — <em>Selk'nam (Ona) Chants of Tierra del Fuego, Argentina, Vol. II</em>, Folkways Records &amp; Anne Chapman, 1977.
+        </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer class="copyright">
+© Natalia Stavrovskaja 2026
+</footer>
+</body>
+
+</html>
