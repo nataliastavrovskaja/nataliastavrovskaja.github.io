@@ -80,8 +80,9 @@
     <div class="index-gallery">
 
 
+
         
-        <a class="gallery-item tall"
+        <a class="gallery-item"
            href="oeuvres/serie-1.html"
            aria-label="Prahy 1 (Seuils) — Prahy - Seuils - Пределы - Yesod">
             <img src="img/serie1-1.jpg" alt="Prahy 1 (Seuils)" loading="lazy">
@@ -92,7 +93,8 @@
         </a>
 
 
-        <a class="gallery-item tall"
+
+        <a class="gallery-item"
            href="oeuvres/serie-1.html"
            aria-label="Prahy 2 (Seuils) — Prahy - Seuils - Пределы - Yesod">
             <img src="img/serie1-2.jpg" alt="Prahy 2 (Seuils)" loading="lazy">
@@ -103,7 +105,8 @@
         </a>
 
 
-        <a class="gallery-item panorama"
+
+        <a class="gallery-item"
            href="oeuvres/serie-5.html"
            aria-label="Saint Jean Baptiste // Daat — Saint Jean Baptiste">
             <img src="img/serie5-2.jpg" alt="Saint Jean Baptiste // Daat" loading="lazy">
@@ -114,7 +117,8 @@
         </a>
 
 
-        <a class="gallery-item panorama"
+
+        <a class="gallery-item"
            href="oeuvres/serie-6.html"
            aria-label="Abraham // Hesed — Abraham">
             <img src="img/serie6-1.jpg" alt="Abraham // Hesed" loading="lazy">
@@ -125,7 +129,8 @@
         </a>
 
 
-        <a class="gallery-item panorama"
+
+        <a class="gallery-item"
            href="oeuvres/serie-7.html"
            aria-label="Quetzalcoatl // Serpent à plumes — Quetzalcoatl">
             <img src="img/serie7-1.jpg" alt="Quetzalcoatl // Serpent à plumes" loading="lazy">
@@ -136,7 +141,8 @@
         </a>
 
 
-        <a class="gallery-item panorama"
+
+        <a class="gallery-item"
            href="oeuvres/serie-8.html"
            aria-label="Tlaloc // Dieu des Eaux et des Points Cardinaux — Tlaloc">
             <img src="img/serie8-1.jpg" alt="Tlaloc // Dieu des Eaux et des Points Cardinaux" loading="lazy">
@@ -147,7 +153,8 @@
         </a>
 
 
-        <a class="gallery-item panorama"
+
+        <a class="gallery-item"
            href="oeuvres/serie-9.html"
            aria-label="Shoort // Le Paysage vivant — Shoort">
             <img src="img/serie9-1.jpg" alt="Shoort // Le Paysage vivant" loading="lazy">
@@ -158,7 +165,8 @@
         </a>
 
 
-        <a class="gallery-item tall"
+
+        <a class="gallery-item"
            href="oeuvres/serie-10.html"
            aria-label="Tlalotli // Dieux de la pluie — Tlalotli">
             <img src="img/serie10-1.jpg" alt="Tlalotli // Dieux de la pluie" loading="lazy">
@@ -169,7 +177,8 @@
         </a>
 
 
-        <a class="gallery-item panorama"
+
+        <a class="gallery-item"
            href="oeuvres/serie-11.html"
            aria-label="Tezcatlipoca // Invisible-et-Impalpable — Tezcatlipoca">
             <img src="img/serie11-1.jpg" alt="Tezcatlipoca // Invisible-et-Impalpable" loading="lazy">
@@ -186,46 +195,7 @@
     © Natalia Stavrovskaja 2026
 </footer>
 
-<script>
-/*
- * Les hauteurs des images sont calculées après leur chargement.
- * Cela permet de conserver leurs proportions réelles tout en
- * créant un patchwork compact, plutôt qu'une grille régulière.
- */
-(function () {
-    const gallery = document.querySelector('.index-gallery');
-    const items = document.querySelectorAll('.index-gallery .gallery-item');
-    const rowHeight = 4;
-    const gap = 4;
 
-    function resizeItems() {
-        items.forEach(item => {
-            const image = item.querySelector('img');
-            if (!image.naturalWidth || !image.naturalHeight) return;
-
-            const height = image.getBoundingClientRect().height;
-            const span = Math.ceil((height + gap) / (rowHeight + gap));
-            item.style.gridRowEnd = `span ${span}`;
-        });
-    }
-
-    function refresh() {
-        requestAnimationFrame(resizeItems);
-    }
-
-    items.forEach(item => {
-        const image = item.querySelector('img');
-
-        if (image.complete) {
-            refresh();
-        } else {
-            image.addEventListener('load', refresh, { once: true });
-        }
-    });
-
-    window.addEventListener('resize', refresh);
-})();
-</script>
 
 </body>
 </html>
