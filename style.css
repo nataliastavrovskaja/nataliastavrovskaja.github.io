@@ -595,7 +595,16 @@ p {
 }
 
 .gallery-item.tall {
-    grid-column: span 2;
+    grid-column: span 1;
+    max-height: 260px;
+}
+
+
+.gallery-item.tall img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: center center;
 }
 
 .gallery-item.medium {
@@ -682,7 +691,8 @@ p {
     }
 
     .gallery-item.tall {
-        grid-column: span 2;
+        grid-column: span 1;
+        max-height: 190px;
     }
 
     .gallery-item.medium,
@@ -697,6 +707,11 @@ p {
 }
 
 @media screen and (max-width: 600px) {
+
+    .gallery-item.tall img {
+        height: 150px;
+    }
+
 
     .index-gallery {
         grid-template-columns: repeat(4, minmax(0, 1fr));
