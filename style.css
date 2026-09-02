@@ -607,7 +607,7 @@ p {
 }
 
 .gallery-item.panorama {
-    grid-column: span 6;
+    grid-column: span 3;
 }
 
 .gallery-item img {
@@ -654,6 +654,7 @@ p {
 .gallery-label span {
     font-size: 10px;
     line-height: 1.3;
+    text-shadow: 0 0 4px rgba(255,255,255,.95), 0 0 10px rgba(255,255,255,.75);
 }
 
 .gallery-label small {
@@ -690,7 +691,7 @@ p {
     }
 
     .gallery-item.panorama {
-        grid-column: span 6;
+        grid-column: span 3;
     }
 
 }
@@ -710,7 +711,7 @@ p {
     }
 
     .gallery-item.panorama {
-        grid-column: span 4;
+        grid-column: span 2;
     }
 
     .gallery-item:hover img,
