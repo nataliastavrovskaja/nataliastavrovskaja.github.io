@@ -559,7 +559,8 @@ p {
 }
 
 
-/* HOMEPAGE — PATCHWORK */
+
+/* HOMEPAGE — GRILLE RÉGULIÈRE */
 
 .index-content {
     max-width: 1600px;
@@ -567,7 +568,7 @@ p {
 
 .index-intro {
     max-width: 620px;
-    margin-bottom: 110px;
+    margin-bottom: 80px;
 }
 
 .index-intro p {
@@ -576,61 +577,42 @@ p {
     margin: 0 0 18px 0;
 }
 
+/*
+ * Toutes les œuvres occupent exactement la même cellule.
+ * 4 colonnes + hauteur fixe = grille régulière.
+ * L'image est recadrée avec object-fit: cover : le navigateur
+ * agrandit/réduit l'image juste ce qu'il faut pour remplir la cellule,
+ * en conservant ses proportions et en retirant seulement ce qui dépasse.
+ */
 .index-gallery {
     display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-    grid-auto-rows: 4px;
-    gap: 4px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 3px;
     width: 100%;
-    align-items: start;
 }
 
 .gallery-item {
     position: relative;
-    overflow: visible;
     display: block;
-    min-width: 0;
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
     text-decoration: none;
     color: #222;
     z-index: 1;
 }
 
-.gallery-item.tall {
-    grid-column: span 1;
-    max-height: 220px;
-}
-
-
-.gallery-item.tall img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    object-position: center center;
-}
-
-.gallery-item.medium {
-    grid-column: span 3;
-}
-
-.gallery-item.wide {
-    grid-column: span 4;
-}
-
-.gallery-item.panorama {
-    grid-column: span 3;
-}
-
 .gallery-item img {
     display: block;
-    vertical-align: top;
     width: 100%;
-    height: auto;
+    height: 100%;
     margin: 0;
+    object-fit: cover;
+    object-position: center center;
     transform: scale(1);
     transform-origin: center center;
     transition:
-        transform 450ms cubic-bezier(.2,.7,.2,1),
-        filter 450ms ease;
+        transform 450ms cubic-bezier(.2,.7,.2,1);
     will-change: transform;
 }
 
@@ -650,11 +632,11 @@ p {
     bottom: 0;
     width: 100%;
     box-sizing: border-box;
-    padding: 12px 12px 10px;
+    padding: 14px 12px 11px;
     display: flex;
     flex-direction: column;
     gap: 3px;
-    background: linear-gradient(to top, rgba(0,0,0,.48), transparent);
+    background: linear-gradient(to top, rgba(0,0,0,.52), transparent);
     color: white;
     opacity: 0;
     transform: translateY(4px);
@@ -665,7 +647,9 @@ p {
 .gallery-label span {
     font-size: 10px;
     line-height: 1.3;
-    text-shadow: 0 0 4px rgba(255,255,255,.95), 0 0 10px rgba(255,255,255,.75);
+    text-shadow:
+        0 0 4px rgba(255,255,255,.95),
+        0 0 10px rgba(255,255,255,.75);
 }
 
 .gallery-label small {
@@ -680,60 +664,51 @@ p {
     transform: translateY(0);
 }
 
+/* Tablette */
 @media screen and (max-width: 900px) {
 
-    .index-intro {
-        margin-bottom: 70px;
-    }
-
     .index-gallery {
-        grid-template-columns: repeat(6, minmax(0, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 3px;
-        grid-auto-rows: 5px;
     }
 
-    .gallery-item.tall {
-        grid-column: span 1;
-        max-height: 170px;
+    .gallery-item {
+        height: 360px;
     }
-
-    .gallery-item.medium,
-    .gallery-item.wide {
-        grid-column: span 3;
-    }
-
-    .gallery-item.panorama {
-        grid-column: span 3;
-    }
-
 }
 
+/* Smartphone : deux colonnes, toujours avec des cellules verticales */
 @media screen and (max-width: 600px) {
 
-    .gallery-item.tall img {
-        height: 135px;
+    .index-intro {
+        margin-bottom: 55px;
     }
-
 
     .index-gallery {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 2px;
-        grid-auto-rows: 6px;
     }
 
-    .gallery-item.tall,
-    .gallery-item.medium,
-    .gallery-item.wide {
-        grid-column: span 2;
-    }
-
-    .gallery-item.panorama {
-        grid-column: span 2;
+    .gallery-item {
+        height: 300px;
     }
 
     .gallery-item:hover img,
     .gallery-item:focus-visible img {
-        transform: scale(1.025);
+        transform: none;
     }
 
+    .gallery-label {
+        opacity: 1;
+        transform: none;
+        padding: 10px 8px 8px;
+    }
+
+    .gallery-label span {
+        font-size: 9px;
+    }
+
+    .gallery-label small {
+        font-size: 7px;
+    }
 }
