@@ -3,44 +3,6 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Natalia Stavrovskaja</title>
-
-<link rel="stylesheet" href="style.css">
-
-</head>
-
-    <!-- LIGHTBOX -->
-
-<div id="lightbox" class="lightbox">
-    <img id="lightbox-img" src="" alt="">
-</div>
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-
-    const images = document.querySelectorAll('.images img');
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-
-    images.forEach(image => {
-
-        image.addEventListener('click', () => {
-            lightbox.style.display = 'flex';
-            lightboxImg.src = image.src;
-        });
-
-    });
-
-    lightbox.addEventListener('click', () => {
-        lightbox.style.display = 'none';
-    });
-
-});
-</script>
-
 <body>
 
 <!-- MENU LATÉRAL -->
@@ -265,7 +227,43 @@ document.addEventListener('DOMContentLoaded', () => {
     © Natalia Stavrovskaja 2026
 </footer>
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Natalia Stavrovskaja</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+    <!-- LIGHTBOX -->
+
+<div id="lightbox" class="lightbox">
+    <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+    const images = document.querySelectorAll('.images img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    images.forEach(image => {
+
+        image.addEventListener('click', () => {
+            lightbox.style.display = 'flex';
+            lightboxImg.src = image.src;
+        });
+
+    });
+
+    lightbox.addEventListener('click', () => {
+        lightbox.style.display = 'none';
+    });
+
+});
+</script>
 
 </body>
 </html>
