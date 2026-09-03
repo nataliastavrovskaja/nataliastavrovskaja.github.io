@@ -14,8 +14,9 @@ body {
     font-size: inherit;
 }
 
-.actualite-text {
+.actualite {
     font-weight: bold;
+    margin-bottom: 80px;
 }
 
 .actualite-poster {
