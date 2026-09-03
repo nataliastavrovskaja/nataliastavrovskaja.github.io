@@ -8,6 +8,30 @@ body {
     font-weight: 300;
 }
 
+/* ACTU */
+
+.actualite-title {
+    font-size: inherit;
+}
+
+.actualite-poster {
+    width: 140px;
+    margin: 0 auto;
+}
+
+.actualite-poster img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.actualite-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
 /* MENU LATÉRAL */
 
 .sidebar {
