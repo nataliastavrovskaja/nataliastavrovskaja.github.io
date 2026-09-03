@@ -11,6 +11,7 @@ body {
 /* ACTU */
 
 .actualite-title {
+    font-weight: bold;
     font-size: inherit;
 }
 
@@ -19,9 +20,15 @@ body {
     margin-bottom: 80px;
 }
 
+.actualite-text {
+    font-size: 10px;
+    line-height: 1.7;
+    text-align: left;
+}
+
 .actualite-poster {
     width: 280px;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
 }
 
 .actualite-poster img {
@@ -32,7 +39,7 @@ body {
 
 .actualite-content {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: flex-start;
     gap: 30px;
 }
